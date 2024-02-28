@@ -1,0 +1,22 @@
+<div id="<%= dom_id bank_slip %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Amount:</strong>
+    <%= bank_slip.value %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Drawee address:</strong>
+    <%= bank_slip.drawee_address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Drawee:</strong>
+    <%= bank_slip.drawee %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this bank slip", bank_slip, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this bank slip", edit_bank_slip_path(bank_slip), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

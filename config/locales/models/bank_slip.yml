@@ -1,0 +1,29 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      bank_slip:
+        one: Boleto Bancário
+        other: Boletos Bancários
+        zero: Nenhum boleto bancário cadastrado
+    attributes:
+      bank_slip:
+        value: Valor
+        due_date: Data de Vencimento
+        drawee_address: Endereço do Sacado
+        drawee_city: Cidade do Sacado
+        drawee_identification_number: CPF/CNPJ do Sacado
+        drawee_name: Nome do Sacado
+        drawee_neighborhood: Bairro do Sacado
+        drawee_state: Estado do Sacado
+        drawee_zipcode: CEP do Sacado
+        status: Situação
+        created_at: Criado em
+        updated_at: Atualizado em
+  enum:
+    bank_slip:
+      status:
+        emitted: Emitido
+        paid: Pago
+        expired: Vencido
+        canceled: Cancelado
